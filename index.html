@@ -1,26 +1,33 @@
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bloons TD | 3kh0</title>
-    <link rel="icon" type="image/x-icon" href="bloonstd.jpg" />
-    <link rel="shortcut icon" type="image/x-icon" href="bloonstd.jpg" />
-  </head>
-  <body>
-    <script src="/js/main.js"></script>
-    <div id="ruffle" width="100%" height="100%"></div>
-    <script src="ruffle.js"></script>
-    <script>
-      window.RufflePlayer = window.RufflePlayer || {};
-      window.addEventListener("load", (event) => {
-        const ruffle = window.RufflePlayer.newest();
-        const player = ruffle.createPlayer();
-        const container = document.getElementById("ruffle");
-        player.id = "player";
-        player.style.width = "100%";
-        player.style.height = "100%";
-        container.appendChild(player);
-        player.load("bloons_tower_defense_1.swf");
-      });
-    </script>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>School Gaming</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to School Gaming!</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="games.html">Games</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>About</h2>
+      <p>This site is your hub for fun, safe games to play at school. Check out our game list, read the latest news, and share your feedback!</p>
+    </section>
+    <section>
+      <h2>Featured Game</h2>
+      <iframe src="https://games.crazygames.com/en_US/geometry-dash" width="600" height="400"></iframe>
+      <!-- You can embed simple HTML5 games, or link to external game sites -->
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 School Gaming</p>
+  </footer>
+</body>
 </html>
